@@ -4,6 +4,8 @@
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <link href="css/navbar.css" rel="stylesheet" type="text/css"/>
 
+
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html">
@@ -26,20 +28,68 @@
 
     <body>
         <h1>Main paragraph to go here</h1>
-        <div id="home1">
+        <div id="home1" class="section">
             <a id="home" class="smooth"></a>
+            <h1>Main Page Details</h1>
             This page is the home.
 
-        </div>
-        <div id="projects1">
-            <a id="projects" class="smooth"></a>
-            This page is for projects.
+              <p>Click on the navigation items for a basic sliding effect.</p>
+
+                <p>Extra page content is courtesy of <a href="http://bluthipsum.com/">Bluth Ipsum</a>. </p>
+
+                <p>But I didn't take wasn't optimistic it could be done for an answer. You burn down the storage unit? Oh, most definitely. You're a good guy, mon frere. That means brother in French. I don't know how I know that. I took four years of Spanish.</p>
+
+                <p>What is she doing at a beauty pageant? Is she running the lights or something?</p>
+
+      <br><br>
+
 
         </div>
-        <div id="contacts1">
-            <a id="contacts" class="smooth"></a>
-            This page is for contacts.
+        <div id="projects1" class="section">
+            <a id="projects" class="smooth"></a>
+            <h1>Project Details</h1>
+            This page is for projects.
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
         </div>
+        <div id="contacts1" class="section">
+            <a id="contacts" class="smooth"></a>
+            <h1>Contact Details</h1>
+             This page is for contacts.
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div>
+                linkdin
+                <br>
+            </div>
+            <div>
+                github
+                <br>
+            </div>
+            <div>
+                mail
+                <br>
+            </div>
+
+        </div>
+
+
+    <script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash);
+  });
+});
+</script>
 
     </body>
 
