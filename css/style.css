@@ -1,14 +1,26 @@
 /*Style for the intensity of points*/
-html, body, #map {
+html, body{
     width: 100%;
     height: 80%;
     margin: 0;
     padding: 0;
 }
 
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
  display: block;
  }
+
+#div_basic_1{
+    padding:16px;
+
+
+
+}
+
+
+
+
 /*Footer*/
 footer {
     display: block;
