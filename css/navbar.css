@@ -28,3 +28,10 @@ li a:hover{
 .active{
     background-color: #E53935;
 }
+
+.sticky {
+    width: 100%;
+    background-color: #000000;
+    position: fixed;
+    top:0
+}

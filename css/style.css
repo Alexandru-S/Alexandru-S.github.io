@@ -35,22 +35,20 @@ a {
 
 
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
- display: block;
- }
-
 #div_basic_1{
     padding:16px;
 
-
-
 }
 
 
 
 
-/*Footer*/
+/*FOOTER*/
 footer {
     display: block;
+    background-color: #1E88E5;
+    color:white;
 }
-/*Footer End*/
+
+
+/*FOOTER END*/
