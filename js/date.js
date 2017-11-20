@@ -1,1 +1,1 @@
-document.write(new Date().toLocaleDateString()); + y;
+document.write(new Date().toLocaleDateString());
