@@ -6,6 +6,7 @@ $.getJSON( "https://api.github.com/users/Alexandru-S/repos", function( json )
 
 for(i=0; i<json.length; i++)
   {
-         $('.projects').append($("<div id='test12'> "+json[i].full_name+  "</div>"));
+         $('.projects').append($("<div id='project_"+i+"' class='w3-col s6'> "+json[i].full_name+  "<img src='img/sheep.jpg'></div>"));
+
     }
  });
