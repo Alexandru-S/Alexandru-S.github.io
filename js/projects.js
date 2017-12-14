@@ -8,8 +8,7 @@ $.getJSON( "https://api.github.com/users/Alexandru-S/repos", function( json )
 for(i=0; i<json.length; i++)
   {
          $('.w3-row-padding').append($(
-         "<div id='project_"+i+"' class='w3-col s6'><h1> "+json[i].name+  "</h1><p> "+json[i].language+  "</p><img src='img/"+fetchPicture(json[i].language)+".jpg'>"
-         +""
+         "<div id='project_"+i+"' class='w3-col s6'><h1> "+json[i].name+  "</h1><p> "+json[i].language+  "</p>  <a href='"+json[i].html_url +"'><img src='img/"+fetchPicture(json[i].language)+".jpg'></a>"
          +"<br><br><br></div>"));
 
     }
