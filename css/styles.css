@@ -1,6 +1,7 @@
 .portfolio-header {
   position: relative;
   background-image: url(../img/natur.jpeg);
+  background-size: 100% 100%;
 
 }
 
@@ -15,6 +16,7 @@
   font-size: 14px;
   text-align: center;
   font-weight: 300;
+  color:white;
 }
 
 .is-compact .mdl-layout__title span {
