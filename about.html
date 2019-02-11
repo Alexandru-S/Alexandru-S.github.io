@@ -1,6 +1,5 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,103 +7,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row">
-                <span class="mdl-layout__title">
-                    <div class="portfolio-logo"></div>
-
-                </span>
-            </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link" href="index.html">Portfolio</a>
-                    <a class="mdl-navigation__link" href="blog.html">Blog</a>
-                    <a class="mdl-navigation__link is-active" href="about.html">About</a>
-                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
-                <a class="mdl-navigation__link" href="blog.html">Blog</a>
-                <a class="mdl-navigation__link" href="about.html">About</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
-            </nav>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        <main class="mdl-layout__content">
-            <div class="mdl-grid portfolio-max-width">
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 
-                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">About</h2>
-                    </div>
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" img/about-header.jpg" border="0" alt="">
-                    </div>
-
-                    <div class="mdl-grid portfolio-copy">
-                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>
-                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
-                            <p>
-                                The following website is a means of documenting and showcasing the projects that I am currently undertaking or have completed.
-                                The blog will attempt to encompass features that are usefull for a sull stack developer.
-                            </p>
-                        </div>
-
-
-
-
-                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Projects</h3>
-
-                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
-                            <p>
-                                I will attempt to document the projects as thoroughly as possible but
-                                there may always be some incompatibility between the platform the projects
-                                were written for and the current build they may be tested on. For any bugs or
-                                crashes, please drop me an email explaining in detail the issue.
-                            </p>
-                        </div>
-                    </div>
+    <div class="parallax-container" style="height:250px;">
+        <div class="parallax"><img src="https://materializecss.com/images/parallax1.jpg"></div>
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="col s12 m12">
+            <div class="card">
+                <div class="card-image">
+                    <img class="article-image" src=" img/about-header.jpg" border="0" alt="">
+                    <span class="card-title">About</span>
                 </div>
 
-
+                <div class="card-content"><h3 class="card-title">Introduction</h3></div>
+                <div class="card-content">
+                    <p>
+                    The following website is a means of documenting and showcasing the projects that I am currently undertaking or have completed.
+                    The blog will attempt to encompass features that are usefull for a sull stack developer.
+                    </p>
+                </div>
+                <div class="card-content"><h3 class="card-title">Projects</h3></div>
+                <div class="card-content">
+                    <p>
+                    I will attempt to document the projects as thoroughly as possible but
+                    there may always be some incompatibility between the platform the projects
+                    were written for and the current build they may be tested on. For any bugs or
+                    crashes, please drop me an email explaining in detail the issue.
+                    </p>
+                </div>
             </div>
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">Alexandru Sulea portfolio website
-
-                    <p> Copyright &copy <script type="text/javascript" src="js/date.js"></script> Alexandru Sulea</p>
-                         <br>
-            <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+        </div>
+    </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <h5 class="white-text"> <p> Alexandru Sulea Portfolio Website</p></h5>
+            <p class="grey-text text-lighten-4">Copyright &copy <script type="text/javascript" src="js/date.js"></script> Alexandru Sulea</p>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
                 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
                 the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and
                 to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+                The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
                 OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
                 HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-                ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-        <p>Contact information:<a href="mailto:alex.sulea@gmail.ie"> alex.sulea@gmail.ie</a></p>
-                    </div>
-                </div>
-                <div class="mdl-mini-footer__right-section">
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Privacy & Terms</a></li>
-                    </ul>
-                </div>
-            </footer>
-        </main>
-    </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+                ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+                </p>
+                <p>Contact information:<a href="mailto:alex.sulea@gmail.ie"> alex.sulea@gmail.ie</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/parallax.js"></script>
 </body>
-
 </html>
