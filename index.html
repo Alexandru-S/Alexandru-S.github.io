@@ -1,209 +1,68 @@
 <!DOCTYPE html>
-<html lang="en-US" xmlns:background-size="http://www.w3.org/1999/xhtml">
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <head>
-           <!--META-->
-        <meta charset="utf-8">
-        <meta http-equiv="Content-Type" content="text/html">
-           <!--JS-->
-        <script type="text/javascript" src="js/nav.js"></script>
+</head>
 
-            <!--CSS-->
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
-        <link href="css/navbar.css" rel="stylesheet" type="text/css"/>
-        <link href="css/paralax.css" rel="stylesheet" type="text/css"/>
-
-
-        <!--TITLE-->
-        <title>Alexandru Sulea Projects Page</title>
-    </head>
-
-
-
-    <div class="parallax1">
-    </div>
-
-
-
-
-
-    <body>
-    <!--BODY-->
-
-
-     <!--NAV-->
-    <header>
-        <a href="#" id="logo"></a>
-
-    <nav class="sticky">
-        <a href="#" id="menu-icon"></a>
-    <ul >
-        <li>
-            <a href="#home"  class="current">Home</a>
-        </li>
-        <li>
-            <a href="#projects">Projects</a>
-        </li>
-        <li>
-            <a href="#contacts">Contact</a>
-        </li>
-
-    </ul>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    </header>
-    <!--NAV_END-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 
-
-
-
-    <div id="div_basic_1">
-        <!--HOME-->
-        <div >
-            <a id="home"></a>
-
-
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-
-
-
-
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                            <br>
-
-            <div class="container">
-
-                <p>This website is designed to serve as a portfolio and contact page for
-                    projects completed and projects in development on github. The page is also serves to help
-                    improve and explore html,css and js implementations.</p>
-                <div class="parallax">
-
-                </div>
-            </div>
-                <br>
-                <br>
-                <br>
-                <br>
-
-
-        </div>
-         <!--HOME_END-->
-
-         <!--PROJECTS-->
-        <div>
-            <a id="projects"></a>
-                   <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                            <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            <div class="container">
-
-            <p>Below are current and completed projects in android, ios, python, R, c++, opencv and many other languages.
-                For more information visit the project pages hosted on github.</p>
-            </div>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-        </div>
-        <!--PROJECTS_END-->
-
-        <!--CONTACTS-->
-        <div>
-            <a id="contacts"></a>
-
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                            <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            <div class="container">
-            My persoal contact information is listed below. If you do happen to email
-            me I will probably get back to you in a week if I'm not too busy.
-
-        </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="container">
-
-            <div>
-
-                <img src="img/linkdin.svg" alt="Smiley face" height="42" width="42">
-                <a>linkdin</a>
-                <br>
-            </div>
-            <div>
-
-                <img src="img/github.svg" alt="Smiley face" height="42" width="42">
-                <a>github</a>
-                <br>
-            </div>
-            <div>
-
-                <img src="img/mail.svg" alt="Smiley face" height="42" width="42">
-                <a>mail</a>
-                <br>
-            </div>
-            </div>
-            <br>
-            <br>
-            <br>
-
-        </div>
-        <!--CONTACT_END-->
-
-
+    <div class="parallax-container" style="height:250px;">
+        <div class="parallax"><img src="https://materializecss.com/images/parallax1.jpg"></div>
     </div>
-     <!--MAIN_BODY-->
-
-    </body>
 
 
-    <footer>
-        <div id="div_basic_1">
-        <p>&copy <script type="text/javascript" src="js/date.js"></script> Alexandru Sulea</p>
-            <br>
-            <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+    <div class="row portfolio-max-width">
+        <!--CONTENT FOR PAGES GOES HERE-->
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <h5 class="white-text"> <p> Alexandru Sulea Portfolio Website</p></h5>
+            <p class="grey-text text-lighten-4">Copyright &copy <script type="text/javascript" src="js/date.js"></script> Alexandru Sulea</p>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
                 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
                 the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and
                 to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+                The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
                 OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
                 HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-                ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-
-        <p>Contact information:<a href="mailto:suleaa@tcd.ie">
-        suleaa@tcd.ie</a></p>
+                ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+                </p>
+                <p>Contact information:<a href="mailto:alex.sulea@gmail.ie"> alex.sulea@gmail.ie</a></p>
+            </div>
         </div>
-</footer>
-
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/parallax.js"></script>
+</body>
 </html>
