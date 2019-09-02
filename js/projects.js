@@ -1,14 +1,12 @@
 //https://api.github.com/users/Alexandru-S/repos
-$.getJSON( "https://api.github.com/users/Alexandru-S/repos", function( json )
- {
-  var i =0
-  var y = fetchPicture()
+$.getJSON( "https://api.github.com/users/Alexandru-S/repos", function( json ){
+console.log("json stuff",json );
+for(var i=0; i<json.length; i++){
 
-for(i=0; i<json.length; i++){
          $('.row').append($(
          "<div id='project_"+i+"' class='col s12 m6 portfolio-card'>"+
             "<div class='card'>"+
-                 "<div class='card-image'>"+
+                 "<div class='card-image waves-effect'>"+
                     "<img class='article-image' src='img/"+fetchPicture(json[i].language)+".jpg' border='0' alt=''>"+
                     "<span class='card-title'>"+json[i].name+"</span>"+
                  "</div>"+
@@ -16,7 +14,7 @@ for(i=0; i<json.length; i++){
                        "<p> "+json[i].language+  "</p>"+
                  "</div>"+
                  "<div class='card-action'>"+
-                       "<a class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent' href= href='"+json[i].html_url +"'>Visit</a>"+
+                       "<a class='blue-text' target='_blank' href='"+json[i].clone_url +"'>Visit</a>"+
                  "</div>"+
             "</div>"+
          "</div>"));
