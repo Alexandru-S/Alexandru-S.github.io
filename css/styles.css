@@ -172,3 +172,25 @@ footer {
   background-size: cover;
 }
 
+.banner {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.banner p {
+  margin: 0;
+}
+
+.banner a.banner-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.banner a.banner-link:hover {
+  text-decoration: none;
+}
